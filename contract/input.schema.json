@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.jinlize.tech/education/JLZ-EDU-SK-095/input.schema.json",
+  "title": "AI生成教学内容事实核验输入契约",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contract_version",
+    "data_status",
+    "contains_sensitive_data",
+    "ai_generated_content",
+    "grade_subject",
+    "curriculum_scope",
+    "target_age",
+    "intended_use"
+  ],
+  "properties": {
+    "contract_version": {
+      "const": "1.2.0"
+    },
+    "data_status": {
+      "type": "string",
+      "enum": [
+        "confirmed",
+        "partially_confirmed",
+        "unconfirmed"
+      ],
+      "description": "输入资料的确认状态"
+    },
+    "contains_sensitive_data": {
+      "type": "boolean"
+    },
+    "requested_output_language": {
+      "type": "string",
+      "enum": [
+        "zh-CN",
+        "en"
+      ],
+      "default": "zh-CN"
+    },
+    "ai_generated_content": {
+      "title": "AI生成教学内容",
+      "description": "待核验原文",
+      "type": "string",
+      "minLength": 1
+    },
+    "grade_subject": {
+      "title": "年级与学科",
+      "description": "用于适龄和学科规则",
+      "type": "string",
+      "minLength": 1
+    },
+    "curriculum_scope": {
+      "title": "教材与课程标准范围",
+      "description": "限定知识范围",
+      "type": "string",
+      "minLength": 1
+    },
+    "allowed_sources": {
+      "title": "允许使用的来源",
+      "description": "用户提供或机构批准的权威来源",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    },
+    "answer_key": {
+      "title": "参考答案",
+      "description": "便于内部核验",
+      "type": "string",
+      "minLength": 1
+    },
+    "target_age": {
+      "title": "目标年龄",
+      "description": "内容适龄性边界",
+      "type": "string",
+      "minLength": 1
+    },
+    "intended_use": {
+      "title": "用途",
+      "description": "课堂、作业、公开材料或营销",
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}

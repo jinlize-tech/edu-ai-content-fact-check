@@ -1,0 +1,31 @@
+{
+  "number": 95,
+  "product_id": "JLZ-EDU-SK-095",
+  "candidate_id": "CAND-051",
+  "chinese_name": "AI生成教学内容事实核验",
+  "english_name": "AI Teaching Content Fact Checker",
+  "repository_name": "edu-ai-content-fact-check",
+  "repository_url": "https://github.com/jinlize-tech/edu-ai-content-fact-check",
+  "product_type": "Skill",
+  "category": "15 数字治理与AI合规中心",
+  "batch": 2,
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "core_outputs": [
+    "事实核验表",
+    "错误/待核实项",
+    "发布建议"
+  ],
+  "optional_outputs": [
+    "引用检查",
+    "答案复核",
+    "适龄风险"
+  ],
+  "high_risk": false,
+  "deterministic": false,
+  "scenario_count": 12,
+  "package_path": "dist/edu-ai-content-fact-check-v1.0.0.zip",
+  "runtime_status": "MODEL_RUNTIME_NOT_VERIFIED",
+  "workbuddy_validation": "NOT_EXECUTED",
+  "status": "LOCAL_DEVELOPMENT_COMPLETE_PENDING_REMOTE_VERIFICATION"
+}

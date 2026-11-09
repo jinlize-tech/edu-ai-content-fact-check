@@ -1,0 +1,15 @@
+{
+  "contract_version": "1.2.0",
+  "data_status": "confirmed",
+  "contains_sensitive_data": false,
+  "requested_output_language": "zh-CN",
+  "ai_generated_content": "AI生成教学内容已核对（脱敏示例）",
+  "grade_subject": "年级与学科已核对（脱敏示例）",
+  "curriculum_scope": "教材与课程标准范围已核对（脱敏示例）",
+  "allowed_sources": [
+    {}
+  ],
+  "answer_key": "参考答案已核对（脱敏示例）",
+  "target_age": "目标年龄已核对（脱敏示例）",
+  "intended_use": "用途已核对（脱敏示例）"
+}

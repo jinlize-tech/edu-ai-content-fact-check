@@ -1,0 +1,94 @@
+{
+  "contract_version": "1.2.0",
+  "product_id": "JLZ-EDU-SK-095",
+  "product_name": "AI生成教学内容事实核验",
+  "product_type": "Skill",
+  "repository_name": "edu-ai-content-fact-check",
+  "repository_url": "https://github.com/jinlize-tech/edu-ai-content-fact-check",
+  "product_version": "1.0.0",
+  "batch": 2,
+  "business_category": "15 数字治理与AI合规中心",
+  "high_risk": false,
+  "deterministic": false,
+  "agent": false,
+  "core_outputs": [
+    "事实核验表",
+    "错误/待核实项",
+    "发布建议"
+  ],
+  "optional_outputs": [
+    "引用检查",
+    "答案复核",
+    "适龄风险"
+  ],
+  "all_outputs": [
+    "事实核验表",
+    "错误/待核实项",
+    "发布建议",
+    "引用检查",
+    "答案复核",
+    "适龄风险"
+  ],
+  "human_review_required": false,
+  "reviewer_role": "业务负责人",
+  "commercial_boundary": null,
+  "input_required": [
+    "contract_version",
+    "data_status",
+    "contains_sensitive_data",
+    "ai_generated_content",
+    "grade_subject",
+    "curriculum_scope",
+    "target_age",
+    "intended_use"
+  ],
+  "input_properties": {
+    "contract_version": {
+      "type": "string"
+    },
+    "data_status": {
+      "type": "string",
+      "enum": [
+        "confirmed",
+        "partially_confirmed",
+        "unconfirmed"
+      ]
+    },
+    "contains_sensitive_data": {
+      "type": "boolean"
+    },
+    "requested_output_language": {
+      "type": "string",
+      "enum": [
+        "zh-CN",
+        "en"
+      ],
+      "default": "zh-CN"
+    },
+    "ai_generated_content": {
+      "type": "string"
+    },
+    "grade_subject": {
+      "type": "string"
+    },
+    "curriculum_scope": {
+      "type": "string"
+    },
+    "allowed_sources": {
+      "type": "array"
+    },
+    "answer_key": {
+      "type": "string"
+    },
+    "target_age": {
+      "type": "string"
+    },
+    "intended_use": {
+      "type": "string"
+    }
+  },
+  "expected_scenario_count": 12,
+  "license": "Apache-2.0",
+  "runtime_status": "MODEL_RUNTIME_NOT_VERIFIED",
+  "workbuddy_validation": "NOT_EXECUTED"
+}
