@@ -5,7 +5,7 @@
   "product_type": "Skill",
   "repository_name": "edu-ai-content-fact-check",
   "repository_url": "https://github.com/jinlize-tech/edu-ai-content-fact-check",
-  "product_version": "1.0.0",
+  "product_version": "1.0.1",
   "batch": 2,
   "business_category": "15 数字治理与AI合规中心",
   "high_risk": false,
