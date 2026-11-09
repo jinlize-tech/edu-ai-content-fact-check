@@ -1,0 +1,17 @@
+{
+  "product_id": "JLZ-EDU-SK-095",
+  "repository_name": "edu-ai-content-fact-check",
+  "version": "1.0.1",
+  "tested_source_commit": "830728f59b92988a8fddd285df19bdc792ce1470",
+  "tested_source_tree_sha": "f1e762042682da640a7b6cece6ab640b8b712d0e",
+  "package_path": "dist/edu-ai-content-fact-check-v1.0.1.zip",
+  "package_sha256": "E76518AE93C3F1E108EAEA824E050160968C87362ECDD05F7AA2F6F15A24362E",
+  "runtime_test_status": "LOCAL_TEST_PASS",
+  "runtime_test_count": 50,
+  "schema_validation_status": "SCHEMA_INSTANCE_VALIDATION_PASS",
+  "schema_validation_case_count": 16,
+  "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED",
+  "workbuddy_validation": "NOT_EXECUTED",
+  "readme_repair": "PASS",
+  "plugin_author_name": null
+}
